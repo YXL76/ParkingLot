@@ -1,0 +1,7 @@
+*.mti
+*.qws
+*.wlf
+db/
+incremental_db/
+output_files/
+work/

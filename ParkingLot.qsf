@@ -1,0 +1,143 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2019  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
+# Date created = 19:54:59  December 26, 2019
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		ParkingLot_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX II"
+set_global_assignment -name DEVICE EPM1270T144C5
+set_global_assignment -name TOP_LEVEL_ENTITY ParkingLot
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:54:59  DECEMBER 26, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "18.1.1 Lite Edition"
+set_global_assignment -name VERILOG_FILE SwitchDebounce.v
+set_global_assignment -name VERILOG_FILE Segment.v
+set_global_assignment -name VERILOG_FILE ParkingLot.v
+set_global_assignment -name VERILOG_FILE LFSR.v
+set_global_assignment -name VERILOG_FILE LEDControl.v
+set_global_assignment -name VERILOG_FILE LCD.v
+set_global_assignment -name VERILOG_FILE KeyDebounce.v
+set_global_assignment -name VERILOG_FILE DotMatrix.v
+set_global_assignment -name VERILOG_FILE Divider.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 144
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR 3.3V
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name TIMING_ANALYZER_MULTICORNER_ANALYSIS OFF
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_location_assignment PIN_60 -to buz
+set_location_assignment PIN_18 -to clk
+set_location_assignment PIN_38 -to col_g[0]
+set_location_assignment PIN_39 -to col_g[1]
+set_location_assignment PIN_40 -to col_g[2]
+set_location_assignment PIN_41 -to col_g[3]
+set_location_assignment PIN_42 -to col_g[4]
+set_location_assignment PIN_43 -to col_g[5]
+set_location_assignment PIN_45 -to col_g[7]
+set_location_assignment PIN_44 -to col_g[6]
+set_location_assignment PIN_11 -to col_r[0]
+set_location_assignment PIN_12 -to col_r[1]
+set_location_assignment PIN_13 -to col_r[2]
+set_location_assignment PIN_14 -to col_r[3]
+set_location_assignment PIN_15 -to col_r[4]
+set_location_assignment PIN_16 -to col_r[5]
+set_location_assignment PIN_21 -to col_r[6]
+set_location_assignment PIN_22 -to col_r[7]
+set_location_assignment PIN_63 -to dis[0]
+set_location_assignment PIN_66 -to dis[1]
+set_location_assignment PIN_67 -to dis[2]
+set_location_assignment PIN_68 -to dis[3]
+set_location_assignment PIN_69 -to dis[4]
+set_location_assignment PIN_70 -to dis[5]
+set_location_assignment PIN_30 -to dis[6]
+set_location_assignment PIN_31 -to dis[7]
+set_location_assignment PIN_61 -to pay
+set_location_assignment PIN_124 -to pow
+set_location_assignment PIN_1 -to row[0]
+set_location_assignment PIN_2 -to row[1]
+set_location_assignment PIN_3 -to row[2]
+set_location_assignment PIN_4 -to row[3]
+set_location_assignment PIN_5 -to row[4]
+set_location_assignment PIN_6 -to row[5]
+set_location_assignment PIN_7 -to row[6]
+set_location_assignment PIN_8 -to row[7]
+set_location_assignment PIN_119 -to rst
+set_location_assignment PIN_51 -to seg[0]
+set_location_assignment PIN_52 -to seg[1]
+set_location_assignment PIN_53 -to seg[2]
+set_location_assignment PIN_55 -to seg[3]
+set_location_assignment PIN_57 -to seg[4]
+set_location_assignment PIN_58 -to seg[5]
+set_location_assignment PIN_59 -to seg[6]
+set_location_assignment PIN_62 -to seg[7]
+set_location_assignment PIN_134 -to swt[0]
+set_location_assignment PIN_133 -to swt[1]
+set_location_assignment PIN_132 -to swt[2]
+set_location_assignment PIN_131 -to swt[3]
+set_location_assignment PIN_130 -to swt[4]
+set_location_assignment PIN_129 -to swt[5]
+set_location_assignment PIN_127 -to swt[6]
+set_location_assignment PIN_125 -to swt[7]
+set_location_assignment PIN_80 -to led[0]
+set_location_assignment PIN_79 -to led[1]
+set_location_assignment PIN_78 -to led[2]
+set_location_assignment PIN_77 -to led[3]
+set_location_assignment PIN_76 -to led[4]
+set_location_assignment PIN_75 -to led[5]
+set_location_assignment PIN_74 -to led[6]
+set_location_assignment PIN_73 -to led[7]
+set_location_assignment PIN_144 -to led[8]
+set_location_assignment PIN_143 -to led[9]
+set_location_assignment PIN_142 -to led[10]
+set_location_assignment PIN_141 -to led[11]
+set_location_assignment PIN_140 -to led[12]
+set_location_assignment PIN_139 -to led[13]
+set_location_assignment PIN_138 -to led[14]
+set_location_assignment PIN_137 -to led[15]
+set_location_assignment PIN_48 -to rs
+set_location_assignment PIN_109 -to rw
+set_location_assignment PIN_108 -to en
+set_location_assignment PIN_101 -to lcd[0]
+set_location_assignment PIN_107 -to lcd[7]
+set_location_assignment PIN_106 -to lcd[6]
+set_location_assignment PIN_105 -to lcd[5]
+set_location_assignment PIN_104 -to lcd[4]
+set_location_assignment PIN_103 -to lcd[3]
+set_location_assignment PIN_102 -to lcd[2]
+set_location_assignment PIN_110 -to lcd[1]
